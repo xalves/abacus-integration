@@ -1,0 +1,8 @@
+routellm:
+  api-url: https://routellm.abacus.ai/v1/chat/completions
+  model:  route-llm
+  # Put your key in an env var: ROUTELLM_API_KEY
+  api-key: ${ROUTELLM_API_KEY:}
+spring:
+  main:
+    web-application-type: none
