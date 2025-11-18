@@ -83,6 +83,11 @@ class CliRunner(
                 "not work as well forms. This was flagged from write-good style from vale, the sentence should be a " +
                 "syntactically correct english sentence. Sentence: [SENTENCE] Your output should be formatted like " +
                 "Answer: your answer",
+        "[SUB-MENU] You will get a sentence, your task is to avoid using 'be' and make the sentence look as similar as " +
+                "possible to the original one. Also in your answer avoid using 'is' and also solutions that use 's will " +
+                "not work as well forms. This was flagged from write-good style from vale, the sentence should be a " +
+                "syntactically correct english sentence. Sentence: [SENTENCE] Your output should be formatted like " +
+                "Answer: your answer",
         "[SUB-MENU] The word \"[WORD]\" is too wordy related based on write-good.TooWordy, propose alternatives. Assume the" +
                 " following sentence is where the word in question is used: ",
         "[SUB-MENU] The word \"[WORD]\" may come as condescending following the rule alex.condescending, propose alternatives." +
@@ -259,11 +264,11 @@ class CliRunner(
             }
 
             val models = listOf(
-                "meta-llama/Meta-Llama-3.1-8B-Instruct", // 0,02$ Winner - 1 times total of 5 times
-                "gpt-5-nano",                            // 0,05$ Winner - 3 times total of 5 times
-                "openai/gpt-oss-120b",                   // 0,08$ Winner - 2 times total of 5 times
-                "Qwen/Qwen3-32B",                        // 0,09$ Winner - 2 times total of 5 times
-                "route-llm"                              // 3,00$ Winner - 1 times total of 5 times
+                "meta-llama/Meta-Llama-3.1-8B-Instruct", // 0,02$ Winner - 2 times total of 11 times
+                "gpt-5-nano",                            // 0,05$ Winner - 7 times total of 11 times
+                "openai/gpt-oss-120b",                   // 0,08$ Winner - 7 times total of 11 times
+                "Qwen/Qwen3-32B",                        // 0,09$ Winner - 5 times total of 11 times
+                "route-llm"                              // 3,00$ Winner - 1 times total of 11 times
 
             )
             models.forEachIndexed { index, s ->
