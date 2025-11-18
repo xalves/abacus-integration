@@ -1,5 +1,7 @@
 # abacus-integration
 
+[![Test & Coverage](https://github.com/xalves/abacus-integration/actions/workflows/test.yml/badge.svg)](https://github.com/xalves/abacus-integration/actions/workflows/test.yml)
+
 # Requirements
  - Java 21
 
